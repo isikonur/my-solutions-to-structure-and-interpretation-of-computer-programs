@@ -1,0 +1,13 @@
+
+
+
+
+
+(define (square-sum-larger a b c)
+    (cond ((and (>= a b) (>= b c) (+ (* a a) (* b b))))
+          ((and (>= a b) (>= c b) (+ (* a a) (* c c))))
+          ((and (>= b a) (>= a c) (+ (* b b) (* a a))))
+          ((and (>= b c) (>= c a) (+ (* b b) (* c c))))
+          ((and (>= c a) (>= a b) (+ (* c c) (* a a))))
+          ((and (>= c b) (>= b a) (+ (* c c) (* b b))))))
+        
